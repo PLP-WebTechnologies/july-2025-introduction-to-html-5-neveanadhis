@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Enhanced Form</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced Form</h1>
+    <nav>
+      <ul>
+        <li><a href="#form">Form</a></li>
+        <li><a href="#table">Table</a></li>
+        <li><a href="#media">Media</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="form">
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="name">Name*</label>
+          <input id="name" name="name" type="text" placeholder="Full name" required>
+
+          <label for="email">Email*</label>
+          <input id="email" name="email" type="email" placeholder="name@example.com" required>
+
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="+254700000000" pattern="^\+?\d{7,15}$">
+        </fieldset>
+
+        <fieldset>
+          <legend>Account</legend>
+          <label for="username">Username*</label>
+          <input id="username" name="username" type="text" required>
+
+          <label for="password">Password*</label>
+          <input id="password" name="password" type="password" required minlength="8">
+
+          <label for="confirm">Confirm Password*</label>
+          <input id="confirm" name="confirm" type="password" required minlength="8">
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <label>Preferred Contact</label>
+          <input type="radio" id="email-contact" name="contact" value="email" checked>
+          <label for="email-contact">Email</label>
+          <input type="radio" id="phone-contact" name="contact" value="phone">
+          <label for="phone-contact">Phone</label>
+
+          <label for="newsletter">Newsletter</label>
+          <select id="newsletter" name="newsletter">
+            <option value="weekly">Weekly</option>
+            <option value="monthly" selected>Monthly</option>
+            <option value="none">None</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Other</legend>
+          <label for="avatar">Upload Avatar</label>
+          <input id="avatar" name="avatar" type="file" accept="image/*">
+
+          <label for="bio">Bio</label>
+          <textarea id="bio" name="bio" maxlength="500" placeholder="Tell us about yourself"></textarea>
+
+          <input type="checkbox" id="agree" name="agree" required>
+          <label for="agree">I agree to the terms*</label>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+
+    <section id="table">
+      <h2>Pricing Table</h2>
+      <table border="1" cellspacing="0" cellpadding="5">
+        <caption>Membership Plans</caption>
+        <thead>
+          <tr>
+            <th>Plan</th>
+            <th>Monthly</th>
+            <th>Annual</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>$5</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>Pro</td>
+            <td>$12</td>
+            <td>$120</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="media">
+      <h2>Media</h2>
+      <figure>
+        <img src="https://via.placeholder.com/400x200" alt="Placeholder image">
+        <figcaption>Sample image</figcaption>
+      </figure>
+      <figure>
+        <video controls width="400">
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <figcaption>Sample video</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Example. All rights reserved.</p>
+  </footer>
+</body>
+</html>
